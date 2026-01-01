@@ -1,0 +1,5 @@
+/* Fix for second wavy separator - flip it upside down */
+.wavy-separator:not(.cream-to-white)::before {
+    transform: scaleY(-1);
+}
+
