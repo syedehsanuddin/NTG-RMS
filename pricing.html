@@ -66,14 +66,36 @@
     <section class="pricing-cards">
         <div class="container">
             <div class="pricing-grid">
-                <!-- Starter Plan -->
+                <!-- Free Plan -->
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <h2>Starter</h2>
-                        <p class="pricing-description">Perfect for small restaurants</p>
+                        <h2>Free</h2>
+                        <p class="pricing-description">Perfect for getting started</p>
                     </div>
                     <div class="pricing-price">
-                        <span class="price-amount">$29</span>
+                        <span class="price-amount">$0</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ 1 Location</li>
+                        <li>✓ 3 Users</li>
+                        <li>✓ 30 Menu Items</li>
+                        <li>✓ 200 Orders/Month</li>
+                        <li>✓ Basic POS</li>
+                        <li>✓ Multi-lingual</li>
+                        <li>✓ Chat support</li>
+                    </ul>
+                    <a href="http://192.168.50.50:8000/" target="_blank" class="btn-pricing">Get Started</a>
+                </div>
+
+                <!-- Starter Plan -->
+                <div class="pricing-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h2>Starter</h2>
+                        <p class="pricing-description">For small restaurants</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-amount">$100</span>
                         <span class="price-period">/month</span>
                     </div>
                     <ul class="pricing-features">
@@ -81,33 +103,8 @@
                         <li>✓ 5 Users</li>
                         <li>✓ 100 Menu Items</li>
                         <li>✓ 1,000 Orders/Month</li>
-                        <li>✓ Basic POS</li>
-                        <li>✓ Reports</li>
-                        <li>✓ Inventory</li>
-                        <li>✓ Analytics</li>
-                    </ul>
-                    <a href="http://192.168.50.50:8000/" target="_blank" class="btn-pricing">Get Started</a>
-                </div>
-
-                <!-- Growth Plan -->
-                <div class="pricing-card featured">
-                    <div class="featured-badge">Most Popular</div>
-                    <div class="pricing-header">
-                        <h2>Growth</h2>
-                        <p class="pricing-description">For growing businesses</p>
-                    </div>
-                    <div class="pricing-price">
-                        <span class="price-amount">$79</span>
-                        <span class="price-period">/month</span>
-                    </div>
-                    <ul class="pricing-features">
-                        <li>✓ 3 Locations</li>
-                        <li>✓ 15 Users</li>
-                        <li>✓ 500 Menu Items</li>
-                        <li>✓ 5,000 Orders/Month</li>
-                        <li>✓ Everything in Starter</li>
-                        <li>✓ API Access</li>
-                        <li>✓ Integrations</li>
+                        <li>✓ All Free features</li>
+                        <li>✓ Report & Analytics</li>
                     </ul>
                     <a href="http://192.168.50.50:8000/" target="_blank" class="btn-pricing-primary">Start Free Trial</a>
                     <p class="trial-note">14-day free trial • No credit card required</p>
@@ -120,7 +117,7 @@
                         <p class="pricing-description">For established restaurants</p>
                     </div>
                     <div class="pricing-price">
-                        <span class="price-amount">$149</span>
+                        <span class="price-amount">$500</span>
                         <span class="price-period">/month</span>
                     </div>
                     <ul class="pricing-features">
@@ -128,11 +125,20 @@
                         <li>✓ 50 Users</li>
                         <li>✓ Unlimited Menu Items</li>
                         <li>✓ 20,000 Orders/Month</li>
-                        <li>✓ Everything in Growth</li>
-                        <li>✓ Multi-location Sync</li>
+                        <li>✓ All Starter features</li>
+                        <li>✓ Multi-location</li>
+                        <li>✓ Inventory</li>
+                        <li>✓ AI Features</li>
                     </ul>
                     <a href="http://192.168.50.50:8000/" target="_blank" class="btn-pricing">Contact Sales</a>
                 </div>
+
+            </div>
+            <!-- Enterprise Contact Section -->
+            <div class="enterprise-contact">
+                <h2>Need Enterprise Solutions?</h2>
+                <p>For large restaurant chains and custom requirements, we offer tailored Enterprise plans with unlimited resources, white-label options, SLA guarantees, and dedicated support.</p>
+                <a href="http://192.168.50.50:8000/" target="_blank" class="btn-pricing-primary">Contact Us for Enterprise</a>
             </div>
         </div>
     </section>
@@ -222,41 +228,47 @@
                     <thead>
                         <tr>
                             <th>Plan</th>
-                            <th>Price</th>
-                            <th>Locations</th>
-                            <th>Users</th>
-                            <th>Menu Items</th>
-                            <th>Orders/Month</th>
-                            <th>Features</th>
+                            <th>Free</th>
+                            <th>Starter</th>
+                            <th>Pro</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Starter</td>
-                            <td>$29</td>
+                            <td>Price</td>
+                            <td>$0</td>
+                            <td>$100</td>
+                            <td>$500</td>
+                        </tr>
+                        <tr>
+                            <td>Locations</td>
                             <td>1</td>
-                            <td>5</td>
-                            <td>100</td>
-                            <td>1,000</td>
-                            <td>+ Inventory, Analytics</td>
-                        </tr>
-                        <tr>
-                            <td>Growth</td>
-                            <td>$79</td>
-                            <td>3</td>
-                            <td>15</td>
-                            <td>500</td>
-                            <td>5,000</td>
-                            <td>+ API, Integrations</td>
-                        </tr>
-                        <tr>
-                            <td>Pro</td>
-                            <td>$149</td>
+                            <td>1</td>
                             <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Users</td>
+                            <td>3</td>
+                            <td>5</td>
                             <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Menu Items</td>
+                            <td>30</td>
+                            <td>100</td>
                             <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Orders/Month</td>
+                            <td>200</td>
+                            <td>1,000</td>
                             <td>20,000</td>
-                            <td>+ Multi-location sync</td>
+                        </tr>
+                        <tr>
+                            <td>Features</td>
+                            <td>Basic POS, Multi-lingual, Chat support</td>
+                            <td>Includes all Free features, plus Report & Analytics</td>
+                            <td>Includes all Starter features, plus Multi-location, Inventory, AI Features</td>
                         </tr>
                     </tbody>
                 </table>

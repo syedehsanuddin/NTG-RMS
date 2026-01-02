@@ -860,7 +860,7 @@ body {
 /* CTA Section */
 .cta {
     padding: 5rem 0;
-    background: linear-gradient(135deg, var(--cream) 0%, var(--white) 100%);
+    background-color: var(--cream);
     text-align: center;
 }
 
@@ -899,14 +899,19 @@ body {
 .footer {
     background-color: var(--cream-dark);
     padding: 4rem 0 2rem;
-    border-top: 1px solid var(--border-color);
+    border-top: none;
 }
 
 /* Footer on pricing and index pages - white background */
 body:has(.pricing-hero) .footer,
 .pricing-page .footer,
 .home-page .footer {
-    background-color: var(--white);
+    background-color: var(--white) !important;
+}
+
+/* Footer on help page - cream background */
+.help-page .footer {
+    background-color: var(--cream) !important;
 }
 
 .footer-grid {
@@ -982,7 +987,31 @@ body:has(.pricing-hero) .footer,
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 0 auto 3rem;
+}
+
+.enterprise-contact {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(135deg, var(--cream) 0%, var(--white) 100%);
+    border-radius: 12px;
+    margin-top: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.enterprise-contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.enterprise-contact p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 2rem;
 }
 
 .pricing-card {
@@ -1236,7 +1265,7 @@ body:has(.pricing-hero) .footer,
 .help-hero {
     padding: 4rem 0;
     text-align: center;
-    background: linear-gradient(135deg, var(--cream) 0%, var(--white) 100%);
+    background-color: var(--cream);
 }
 
 .help-hero h1 {
