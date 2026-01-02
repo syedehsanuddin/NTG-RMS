@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Hide/show navbar on scroll
     let lastScrollTop = 0;
     let scrollThreshold = 100; // Minimum scroll distance before hiding
+    const navbarSeparator = document.querySelector('.navbar-separator');
 
     window.addEventListener('scroll', function() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -16,14 +17,26 @@ document.addEventListener('DOMContentLoaded', function() {
             if (scrollTop > lastScrollTop) {
                 navbar.style.transform = 'translateY(-100%)';
                 navbar.style.transition = 'transform 0.3s ease-in-out';
+                if (navbarSeparator) {
+                    navbarSeparator.style.opacity = '0';
+                    navbarSeparator.style.transform = 'translateY(100%)';
+                }
             } 
             // Scrolling up - show navbar
             else {
                 navbar.style.transform = 'translateY(0)';
+                if (navbarSeparator) {
+                    navbarSeparator.style.opacity = '1';
+                    navbarSeparator.style.transform = 'translateY(0)';
+                }
             }
         } else {
             // At top of page - always show navbar
             navbar.style.transform = 'translateY(0)';
+            if (navbarSeparator) {
+                navbarSeparator.style.opacity = '1';
+                navbarSeparator.style.transform = 'translateY(0)';
+            }
         }
         
         lastScrollTop = scrollTop;

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RMS - Restaurant Management System | NTG Clarity Inc.</title>
-    <link rel="icon" type="image/svg+xml" href="logo.svg">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Kalam:wght@300;400;700&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
         <div class="container">
             <div class="nav-content">
                 <div class="logo">
-                    <img src="logo.svg" alt="NTG Clarity Networks Inc." class="logo-img">
+                    <img src="images/logo.svg" alt="NTG Clarity Networks Inc." class="logo-img">
                 </div>
                 <ul class="nav-menu">
                     <li><a href="index.html" class="active">Home</a></li>
@@ -50,8 +50,26 @@
         </div>
     </section>
 
-    <!-- Wavy Separator -->
-    <div class="wavy-separator cream-to-white"></div>
+    <!-- Animated Wave Separator -->
+    <div class="wavy-separator cream-to-white">
+        <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax1">
+                <use xlink:href="#gentle-wave" x="50" y="3" fill="var(--white)" fill-opacity="0.7"/>
+            </g>
+            <g class="parallax2">
+                <use xlink:href="#gentle-wave" x="50" y="0" fill="var(--white)" fill-opacity="0.5"/>
+            </g>
+            <g class="parallax3">
+                <use xlink:href="#gentle-wave" x="50" y="9" fill="var(--white)" fill-opacity="0.3"/>
+            </g>
+            <g class="parallax4">
+                <use xlink:href="#gentle-wave" x="50" y="6" fill="var(--white)"/>
+            </g>
+        </svg>
+    </div>
 
     <!-- App Showcase -->
     <section class="app-showcase">
@@ -62,12 +80,12 @@
             </div>
             <div class="showcase-content">
                 <p><strong>Experience the simplicity and power of RMS.</strong><br>
-                From real-time dashboards to seamless POS operations, see how RMS transforms your restaurant management.</p>
+                From real-time dashboards to seamless order lifecycle management and kitchen operations, see how RMS transforms your restaurant management.</p>
             </div>
             <div class="screenshots-grid">
                 <div class="screenshot-item">
                     <div class="screenshot-image">
-                        <img src="Dashboard.png" alt="RMS Dashboard - Real-time analytics and insights">
+                        <img src="images/Dashboard.png" alt="RMS Dashboard - Real-time analytics and insights">
                         <div class="screenshot-overlay">
                             <div class="screenshot-content">
                                 <h3>Real-Time Dashboard</h3>
@@ -84,10 +102,10 @@
                 </div>
                 <div class="screenshot-item">
                     <div class="screenshot-image">
-                        <img src="POS.png" alt="RMS POS System - Fast and efficient point of sale">
+                        <img src="images/POS.png" alt="RMS POS System - Fast and efficient point of sale">
                         <div class="screenshot-overlay">
                             <div class="screenshot-content">
-                                <h3>Point of Sale System</h3>
+                                <h3>Order Lifecycle Management</h3>
                                 <p>Streamline transactions with our lightning-fast POS. Process orders quickly, accept multiple payment methods, and manage tables effortlessly.</p>
                                 <ul class="screenshot-features">
                                     <li>Fast order processing</li>
@@ -101,10 +119,10 @@
                 </div>
                 <div class="screenshot-item">
                     <div class="screenshot-image">
-                        <img src="Kitchen.png" alt="RMS Kitchen Display - Streamlined kitchen operations">
+                        <img src="images/Kitchen.png" alt="RMS Kitchen Display - Streamlined kitchen operations">
                         <div class="screenshot-overlay">
                             <div class="screenshot-content">
-                                <h3>Kitchen Display System</h3>
+                                <h3>Kitchen Operation System</h3>
                                 <p>Keep your kitchen running smoothly. View orders in real-time, prioritize tasks, and ensure timely food preparation with our intuitive kitchen interface.</p>
                                 <ul class="screenshot-features">
                                     <li>Real-time order updates</li>
@@ -120,8 +138,26 @@
         </div>
     </section>
 
-    <!-- Wavy Separator -->
-    <div class="wavy-separator"></div>
+    <!-- Animated Wave Separator -->
+    <div class="wavy-separator">
+        <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+            <defs>
+                <path id="gentle-wave-cream3" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax1">
+                <use xlink:href="#gentle-wave-cream3" x="50" y="3" fill="var(--cream)" fill-opacity="0.7"/>
+            </g>
+            <g class="parallax2">
+                <use xlink:href="#gentle-wave-cream3" x="50" y="0" fill="var(--cream)" fill-opacity="0.5"/>
+            </g>
+            <g class="parallax3">
+                <use xlink:href="#gentle-wave-cream3" x="50" y="9" fill="var(--cream)" fill-opacity="0.3"/>
+            </g>
+            <g class="parallax4">
+                <use xlink:href="#gentle-wave-cream3" x="50" y="6" fill="var(--cream)"/>
+            </g>
+        </svg>
+    </div>
 
     <!-- Feature Icons -->
     <section class="feature-icons">
@@ -173,9 +209,26 @@
         </div>
     </section>
 
-    <!-- Rounded Separator -->
-    <div class="wavy-separator flip-separator"></div>
-
+  <!-- Animated Wave Separator -->
+  <div class="wavy-separator flip-separator">
+    <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+        <defs>
+            <path id="gentle-wave-cream-flip2" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax1">
+            <use xlink:href="#gentle-wave-cream-flip2" x="50" y="3" fill="var(--cream)" fill-opacity="0.7"/>
+        </g>
+        <g class="parallax2">
+            <use xlink:href="#gentle-wave-cream-flip2" x="50" y="0" fill="var(--cream)" fill-opacity="0.5"/>
+        </g>
+        <g class="parallax3">
+            <use xlink:href="#gentle-wave-cream-flip2" x="50" y="9" fill="var(--cream)" fill-opacity="0.3"/>
+        </g>
+        <g class="parallax4">
+            <use xlink:href="#gentle-wave-cream-flip2" x="50" y="6" fill="var(--cream)"/>
+        </g>
+    </svg>
+</div>
     <!-- Level Up Section -->
     <section class="level-up">
         <div class="container">
@@ -203,7 +256,7 @@
                     </div>
                     <div class="device-item">
                         <div class="device-icon">🖨️</div>
-                        <h3>Kitchen Display</h3>
+                        <h3>Kitchen Operation System</h3>
                     </div>
                     <div class="device-item">
                         <div class="device-icon">📊</div>
@@ -218,8 +271,26 @@
         </div>
     </section>
 
-    <!-- Rounded Separator -->
-    <div class="wavy-separator"></div>
+    <!-- Animated Wave Separator -->
+    <div class="wavy-separator">
+        <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+            <defs>
+                <path id="gentle-wave-cream2" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax1">
+                <use xlink:href="#gentle-wave-cream2" x="50" y="3" fill="var(--cream)" fill-opacity="0.7"/>
+            </g>
+            <g class="parallax2">
+                <use xlink:href="#gentle-wave-cream2" x="50" y="0" fill="var(--cream)" fill-opacity="0.5"/>
+            </g>
+            <g class="parallax3">
+                <use xlink:href="#gentle-wave-cream2" x="50" y="9" fill="var(--cream)" fill-opacity="0.3"/>
+            </g>
+            <g class="parallax4">
+                <use xlink:href="#gentle-wave-cream2" x="50" y="6" fill="var(--cream)"/>
+            </g>
+        </svg>
+    </div>
 
     <!-- Enterprise Software Section -->
     <section class="enterprise">
@@ -261,8 +332,26 @@
         </div>
     </section>
 
-    <!-- Rounded Separator -->
-    <div class="wavy-separator flip-separator"></div>
+    <!-- Animated Wave Separator -->
+    <div class="wavy-separator flip-separator">
+        <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+            <defs>
+                <path id="gentle-wave-cream-flip2" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax1">
+                <use xlink:href="#gentle-wave-cream-flip2" x="50" y="3" fill="var(--cream)" fill-opacity="0.7"/>
+            </g>
+            <g class="parallax2">
+                <use xlink:href="#gentle-wave-cream-flip2" x="50" y="0" fill="var(--cream)" fill-opacity="0.5"/>
+            </g>
+            <g class="parallax3">
+                <use xlink:href="#gentle-wave-cream-flip2" x="50" y="9" fill="var(--cream)" fill-opacity="0.3"/>
+            </g>
+            <g class="parallax4">
+                <use xlink:href="#gentle-wave-cream-flip2" x="50" y="6" fill="var(--cream)"/>
+            </g>
+        </svg>
+    </div>
 
     <!-- Testimonials -->
     <section class="testimonials">
@@ -283,8 +372,26 @@
         </div>
     </section>
 
-    <!-- Rounded Separator -->
-    <div class="wavy-separator cream-to-white flip-separator"></div>
+    <!-- Animated Wave Separator -->
+    <div class="wavy-separator">
+        <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+            <defs>
+                <path id="gentle-wave-cream2" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax1">
+                <use xlink:href="#gentle-wave-cream2" x="50" y="3" fill="var(--cream)" fill-opacity="0.7"/>
+            </g>
+            <g class="parallax2">
+                <use xlink:href="#gentle-wave-cream2" x="50" y="0" fill="var(--cream)" fill-opacity="0.5"/>
+            </g>
+            <g class="parallax3">
+                <use xlink:href="#gentle-wave-cream2" x="50" y="9" fill="var(--cream)" fill-opacity="0.3"/>
+            </g>
+            <g class="parallax4">
+                <use xlink:href="#gentle-wave-cream2" x="50" y="6" fill="var(--cream)"/>
+            </g>
+        </svg>
+    </div>
 
     <!-- CTA Section -->
     <section class="cta">
@@ -346,7 +453,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
 
