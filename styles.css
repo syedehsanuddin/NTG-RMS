@@ -9,7 +9,7 @@
     --primary-color: #0F766E;
     --primary-dark: #115E59;
     --secondary-color: #F5F1EB;
-    --cream: #FBF3D5;
+    --cream: #F9F7F4;
     --cream-dark: #E8E4DD;
     --text-dark: #2C2C2C;
     --text-light: #666666;
@@ -902,13 +902,6 @@ body {
     border-top: 1px solid var(--border-color);
 }
 
-/* Footer on pricing and index pages - white background */
-body:has(.pricing-hero) .footer,
-.pricing-page .footer,
-.home-page .footer {
-    background-color: var(--white);
-}
-
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -959,7 +952,7 @@ body:has(.pricing-hero) .footer,
 .pricing-hero {
     padding: 4rem 0;
     text-align: center;
-    background-color: var(--cream);
+    background: linear-gradient(135deg, var(--cream) 0%, var(--white) 100%);
 }
 
 .pricing-hero h1 {
@@ -986,7 +979,7 @@ body:has(.pricing-hero) .footer,
 }
 
 .pricing-card {
-    background-color: var(--white);
+    background-color: var(--cream);
     border: 2px solid var(--border-color);
     border-radius: 12px;
     padding: 2.5rem;
@@ -1217,7 +1210,7 @@ body:has(.pricing-hero) .footer,
 
 .pricing-cta {
     padding: 4rem 0;
-    background-color: var(--cream);
+    background: linear-gradient(135deg, var(--cream) 0%, var(--white) 100%);
     text-align: center;
 }
 
